@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>cima code - Login</title>
+    <link rel="stylesheet" href="css/login.css" />
+   <link rel="shortcut icon" type="image/png" href="img/814080_cinema_512x512.png">
+  </head>
+
+  <body
+    style="
+      background: linear-gradient(
+        0deg,
+        rgba(0, 13, 60, 1) 100%,
+        rgba(136, 203, 171, 1) 0%
+      );
+      font-family: 'Kumbh Sans', sans-serif;
+    "
+  >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <header class="page__header">
+      <nav class="navbar__menu">
+        <!-- Navigation starts as empty UL that will be populated with JS -->
+        <ul id="navbar__list">
+          <li>
+            <a href="index.html" class="links"> Home</a>
+          </li>
+          <li>
+            <a href="login.html" class="links"> Login</a>
+          </li>
+          <li>
+            <a href="register.html" class="links"> Register</a>
+          </li>
+          <li>
+            <a href="requestFilm.html" class="links"> Request a movie</a>
+          </li>
+          <li>
+            <a href="aboutUs.html" class="links"> about us</a>
+          </li>
+
+          
+        </ul>
+      </nav>
+    </header>
+    <section class="your-active-class">
+      <div class="landing__container">
+        <div class="welcome myTransitionLeft">
+          <h1>Welcome Back To <span style="color: #c1971f;"> Cima Code</span>!<br />We missed you</h1>
+        </div>
+
+        <form
+          autocomplete="on"
+          class="mainform myTransition"
+          method="POST"
+          name="logForm"
+        >
+          <h1>Login</h1>
+          <input type="email" name="Email" class="info" placeholder="E-mail" />
+          <input
+            type="password"
+            name="Password"
+            class="info"
+            placeholder="Password"
+          />
+          <input
+            type="button"
+            value="Login"
+            id="loginBtn"
+            onclick="login()"
+          /><br /><br /><br />
+          <label for="regiter" id="regiText"
+            ><strong>Don't have an account?</strong></label
+          ><br />
+          <input
+            type="button"
+            value="Register"
+            id="registerBtn"
+            onclick="Registeration()"
+          />
+        </form>
+      </div>
+    </section>
+    <script type="text/javascript" src="js/login.js"></script>
+    
+  </body>
+</html>
